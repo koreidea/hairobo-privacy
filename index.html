@@ -5,111 +5,245 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hai Robo — Privacy Policy</title>
 <style>
+  :root{--ink:#1d1d1f;--muted:#6e6e73;--line:#e2e2e6;--accent:#0066cc}
+  *{box-sizing:border-box}
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-       max-width:760px;margin:40px auto;padding:0 20px;line-height:1.6;color:#1d1d1f}
-  h1{font-size:28px} h2{font-size:20px;margin-top:32px} code{background:#f2f2f2;padding:1px 5px;border-radius:4px}
-  a{color:#0066cc}
+       max-width:780px;margin:40px auto;padding:0 22px;line-height:1.65;color:var(--ink)}
+  h1{font-size:30px;margin-bottom:4px}
+  h2{font-size:21px;margin-top:38px;padding-top:6px;border-top:1px solid var(--line)}
+  h3{font-size:16px;margin-top:22px}
+  p,li{font-size:16px}
+  .meta{color:var(--muted);font-size:14px;margin:0 0 6px}
+  .lede{font-size:17px}
+  a{color:var(--accent)}
+  code{background:#f2f2f2;padding:1px 5px;border-radius:4px;font-size:14px}
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#f7f7f9}
+  .toc{background:#f7f7f9;border:1px solid var(--line);border-radius:10px;padding:14px 20px;font-size:14px}
+  .toc ol{margin:6px 0;padding-left:20px}
+  footer{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:13px}
 </style>
 </head>
 <body>
+
 <h1>Hai Robo — Privacy Policy</h1>
-<p><strong>Last updated:</strong> 24 May 2026</p>
+<p class="meta"><strong>Last updated:</strong> 26 May 2026 &nbsp;·&nbsp; <strong>Effective:</strong> 26 May 2026</p>
 
-<p>Hai Robo (“the app”) is published by <strong>KOREIDEA INNOVATIONS PRIVATE LIMITED</strong>
-(“we”, “us”). This policy explains what data the app handles and why. We collect as
-little as possible and process most data on your device.</p>
+<p class="lede">This Privacy Policy explains how <strong>KOREIDEA INNOVATIONS PRIVATE LIMITED</strong>
+(“KOREIDEA”, “we”, “us”, or “our”) collects, uses, shares, and protects your information when you
+use the <strong>Hai Robo</strong> mobile application and its optional companion software
+(together, the “App” or “Service”). We are the <em>data fiduciary / data controller</em> for that
+information. We are committed to data minimisation — most processing happens on your device, and we
+collect only what we need to provide the Service.</p>
 
-<h2>1. Account</h2>
-<p>You sign in with <strong>Sign in with Apple</strong> or <strong>Sign in with Google</strong>.
-We receive a unique user ID and, where you allow it, your name and email, used only to
-create and identify your account. Authentication and account data are handled by our
-backend provider, <strong>Supabase</strong>.</p>
+<p>By downloading, accessing, or using the App, you acknowledge that you have read and understood
+this Policy. If you do not agree, please do not use the App.</p>
 
-<h2>2. Voice &amp; microphone</h2>
-<p>Wake-word detection (“hai robo”) runs <strong>entirely on your device</strong>; that audio
-never leaves the phone. When you ask a question, the recognised text (not raw audio) is sent
-to our backend, which relays it to <strong>Google Gemini</strong> to generate a reply. We do
-not sell or use your conversations for advertising.</p>
+<div class="toc">
+  <strong>Contents</strong>
+  <ol>
+    <li><a href="#who">Who we are</a></li>
+    <li><a href="#collect">Information we collect</a></li>
+    <li><a href="#device">On-device processing</a></li>
+    <li><a href="#permissions">Device permissions</a></li>
+    <li><a href="#use">How and why we use information</a></li>
+    <li><a href="#ai">AI features, content &amp; reporting</a></li>
+    <li><a href="#share">How we share information &amp; service providers</a></li>
+    <li><a href="#thirdparty">Third-party apps and services you choose to open</a></li>
+    <li><a href="#transfers">International data transfers</a></li>
+    <li><a href="#retention">Data retention &amp; deletion</a></li>
+    <li><a href="#rights">Your rights and choices</a></li>
+    <li><a href="#security">Security &amp; data-breach notification</a></li>
+    <li><a href="#children">Children</a></li>
+    <li><a href="#regions">Region-specific disclosures (India, EEA/UK, California)</a></li>
+    <li><a href="#changes">Changes to this Policy</a></li>
+    <li><a href="#grievance">Grievance Officer &amp; contact</a></li>
+  </ol>
+</div>
 
-<h2>3. Camera</h2>
-<p>The front camera is used only for on-device face tracking (so the robot can turn toward you)
-and to scan a QR code when pairing a Mac. Video is processed live on the device and is
-<strong>not recorded, stored, or uploaded</strong>.</p>
+<h2 id="who">1. Who we are</h2>
+<p>The App is published by KOREIDEA INNOVATIONS PRIVATE LIMITED, a company incorporated in India and
+based in Visakhapatnam, Andhra Pradesh. For any privacy question, or to exercise your rights, contact
+our Grievance Officer at <a href="mailto:admin@koreidea.com">admin@koreidea.com</a>
+(see <a href="#grievance">Section&nbsp;16</a>).</p>
 
-<h2>4. Location</h2>
-<p>Location is used only at the moment you ask for local weather or to book a ride, to set your
-pickup point. It is checked on demand and is <strong>not tracked in the background</strong>.
-Weather is provided by Apple <strong>WeatherKit</strong>.</p>
+<h2 id="collect">2. Information we collect</h2>
+<p>We collect the following categories of information. Where a feature is optional, the related data
+is collected only if you use that feature or grant the relevant permission.</p>
 
-<h2>5. Calendar &amp; Reminders</h2>
-<p>With your permission, the app reads your calendar to tell you your next event and creates
-reminders you ask for. This data stays on your device / in your Apple account; we do not
-copy it to our servers.</p>
+<h3>2.1 Information you provide</h3>
+<table>
+  <tr><th>Category</th><th>Examples</th><th>Why</th></tr>
+  <tr><td>Account &amp; identity</td><td>A unique user ID and, where you allow it, your name and email address, received through <strong>Sign in with Apple</strong> or <strong>Sign in with Google</strong>.</td><td>To create and secure your account and identify you across your devices.</td></tr>
+  <tr><td>Profile</td><td>A display name you optionally set in the App.</td><td>To personalise replies (e.g. greet you by name).</td></tr>
+  <tr><td>Voice commands &amp; chat</td><td>The <em>text</em> of what you ask (transcribed on your device), and your conversation history with the assistant.</td><td>To understand your request and generate a reply.</td></tr>
+  <tr><td>Saved content</td><td>Saved places, saved orders, expense entries, and the facts you explicitly ask the assistant to “remember”.</td><td>To provide the features you asked for and (optionally) sync them across your devices.</td></tr>
+  <tr><td>Content reports</td><td>If you report an AI response, the report you submit — which may include the flagged prompt and reply plus your description.</td><td>To investigate and act on objectionable content (see <a href="#ai">Section&nbsp;6</a>).</td></tr>
+</table>
 
-<h2>6. Your saved data</h2>
-<p>Saved places, saved orders, expenses, and the facts you ask the app to remember are stored
-locally on your device and, via Apple iCloud, across your own devices. If you turn on cloud
-sync, this data is also stored in your account on our backend (Supabase) so it follows you
-across devices and platforms. You can export or delete it at any time in Settings.</p>
+<h3>2.2 Information collected automatically</h3>
+<p>To deliver requests to our backend and keep the Service reliable, limited technical information is
+processed, such as your device type and operating-system version, the App version, coarse network
+information, and timestamps of requests. We do <strong>not</strong> embed third-party advertising or
+cross-app tracking SDKs, and we do not build advertising profiles about you. We do not use the
+App Tracking Transparency “tracking” permission.</p>
 
-<h2>7. Screen-aware features (optional Mac companion)</h2>
-<p>If you pair the optional Mac companion, a screenshot of your Mac is sent — only when you ask
-a screen-related question — to generate a relevant answer. Screenshots are processed for that
-request and not retained for any other purpose.</p>
+<h3>2.3 Information from permissions</h3>
+<p>Certain features rely on device data accessed only with your permission — see
+<a href="#permissions">Section&nbsp;4</a>.</p>
 
-<h2>8. Service providers</h2>
+<h2 id="device">3. On-device processing</h2>
+<p>We process as much as possible directly on your device, where it never reaches our servers:</p>
 <ul>
-  <li><strong>Apple</strong> — Sign in with Apple, WeatherKit, iCloud.</li>
-  <li><strong>Google</strong> — Sign in with Google; Gemini (AI replies, via our backend); Maps Places (address lookup).</li>
-  <li><strong>Supabase</strong> — authentication, the AI proxy, memory, and optional data sync.</li>
+  <li><strong>Wake-word detection</strong> (“hai robo”) runs entirely on your device. Audio is analysed locally and is not transmitted or stored.</li>
+  <li><strong>Speech-to-text.</strong> Your spoken request is converted to text on your device using Apple’s speech recognition. Depending on your device and settings, Apple may process audio to provide transcription under <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. Only the resulting <em>text</em> — not raw audio — is sent to our backend.</li>
+  <li><strong>Face tracking</strong> uses the front camera to detect your face so the robot can turn toward you. Video frames are processed live on the device and are never recorded, stored, or uploaded.</li>
 </ul>
-<p>AI provider keys are held only on our backend and are never shipped inside the app.</p>
-<p><strong>Cross-border transfer:</strong> our service providers (Supabase, Google) may process
-and store data on servers outside India. By using the app you consent to this transfer, which we
-make using appropriate safeguards.</p>
 
-<h2>9. Consent</h2>
-<p>When you sign in, we show you what we collect and why, and you consent by signing in. Your
-consent is limited to the purposes described here. You can withdraw it at any time (see your
-rights below); withdrawal does not affect processing already carried out.</p>
+<h2 id="permissions">4. Device permissions</h2>
+<table>
+  <tr><th>Permission</th><th>How it is used</th><th>Leaves device?</th></tr>
+  <tr><td>Microphone</td><td>To hear the wake word and your voice commands.</td><td>No (wake word on-device; commands become text — see §3).</td></tr>
+  <tr><td>Speech recognition</td><td>To convert your speech to text.</td><td>May involve Apple per device settings (see §3).</td></tr>
+  <tr><td>Camera</td><td>On-device face tracking and scanning a QR code to pair a Mac.</td><td>No.</td></tr>
+  <tr><td>Location (when in use)</td><td>Only when you ask for local weather or to book a ride (to set your pickup point). Checked on demand.</td><td>Sent only to fulfil that request (weather/ride). Not tracked in background.</td></tr>
+  <tr><td>Calendar &amp; Reminders</td><td>To tell you your next event and to create reminders you ask for.</td><td>Stays on your device / in your Apple account; we do not copy it to our servers.</td></tr>
+  <tr><td>Motion &amp; fitness</td><td>To detect when the phone is placed on the dock.</td><td>No.</td></tr>
+  <tr><td>Photos (add only)</td><td>To save an image the assistant generated, when you tap Save.</td><td>Saved to your own photo library.</td></tr>
+  <tr><td>Local network</td><td>To find your paired Mac on the same Wi-Fi for screen-aware help.</td><td>Stays on your local network.</td></tr>
+  <tr><td>Bluetooth</td><td>To connect to the optional Hai Robo robot dock (pan, tilt, lights).</td><td>Local connection to your own dock only.</td></tr>
+</table>
+<p>You can review or revoke any permission at any time in your device Settings. Revoking a permission
+disables the related feature but otherwise does not stop you using the App.</p>
 
-<h2>10. Data retention &amp; deletion</h2>
-<p>We keep your data only while your account is active or as needed to provide the app. You can
-delete all on-device data from <em>Settings → Data &amp; privacy</em>, and permanently delete your
-account and all server-side data from <em>Settings → Account → Delete account</em>. Server-side
-copies and backups are purged within <strong>30 days</strong> of deletion.</p>
+<h2 id="use">5. How and why we use information</h2>
+<ul>
+  <li>To provide and operate the assistant and the features you request.</li>
+  <li>To authenticate you and keep your account and data secure.</li>
+  <li>To sync your saved content across your devices, if you enable cloud sync.</li>
+  <li>To investigate and act on reports of objectionable content and to keep the Service safe.</li>
+  <li>To diagnose problems, prevent abuse and fraud, and maintain reliability and performance.</li>
+  <li>To comply with applicable law and enforce our terms.</li>
+</ul>
+<p>We rely on your <strong>consent</strong> (which you give when you sign in and when you grant a
+permission) and, where applicable, on our legitimate interest in operating, securing, and improving
+the Service and on compliance with legal obligations. We do <strong>not</strong> sell your personal
+data, and we do not use your conversations for advertising.</p>
 
-<h2>11. Your rights</h2>
-<p>Under India's Digital Personal Data Protection Act, 2023 (and comparable laws), you can:</p>
+<h2 id="ai">6. AI features, content &amp; reporting</h2>
+<p>The assistant’s replies, search answers, translations, and generated images are produced using
+artificial intelligence (see providers in <a href="#share">Section&nbsp;7</a>). When you ask a
+question, the recognised text of your request — and, for screen-aware help, a screenshot you
+explicitly request — is sent through our backend to the AI provider to generate a response.</p>
+<p><strong>AI can make mistakes.</strong> Responses and generated images may be inaccurate, incomplete,
+or unexpected, and should not be relied on for medical, legal, financial, or other critical decisions.</p>
+<p><strong>Content moderation and reporting.</strong> We apply content-safety filtering to reduce
+objectionable output. If you encounter a response that is offensive, unsafe, or otherwise
+inappropriate, you can report it from <em>Settings → AI safety &amp; reporting</em> or by tapping the
+flag shown on a reply. A report may include the flagged prompt and reply and basic app/device details
+so we can locate and review it. We review reports and take appropriate action, typically within
+24&nbsp;hours.</p>
+
+<h2 id="share">7. How we share information &amp; service providers</h2>
+<p>We share information only with the service providers (sub-processors) needed to run the App, under
+agreements that require them to protect it and use it only for our purposes:</p>
+<table>
+  <tr><th>Provider</th><th>Role</th><th>Data involved</th></tr>
+  <tr><td><strong>Apple</strong></td><td>Sign in with Apple; on-device speech recognition; WeatherKit; iCloud sync of your saved data.</td><td>Account identifier; speech (per device settings); location for weather; your saved data in your iCloud.</td></tr>
+  <tr><td><strong>Google</strong></td><td>Sign in with Google; Gemini AI (replies, search, translation, images — via our backend); Maps Places (address lookup).</td><td>Account identifier; the text of your request and (for screen help) a requested screenshot; address queries.</td></tr>
+  <tr><td><strong>Supabase</strong></td><td>Authentication, our AI proxy, optional cloud sync, and storage of account data.</td><td>Account data; your request text in transit; your saved data if cloud sync is on.</td></tr>
+  <tr><td><strong>wttr.in</strong></td><td>Fallback weather source used only if Apple WeatherKit is temporarily unavailable.</td><td>Approximate location or place name to return weather.</td></tr>
+</table>
+<p>AI provider keys are held only on our backend and are <strong>never shipped inside the App</strong>.
+We may also disclose information if required by law, to protect our rights or users’ safety, or in
+connection with a merger, acquisition, or asset transfer (in which case we will notify you and this
+Policy will continue to apply).</p>
+
+<h2 id="thirdparty">8. Third-party apps and services you choose to open</h2>
+<p>Some features (for example, booking a ride or reordering food or groceries) work by opening a
+third party’s app or website that you have chosen, so you can complete the action there. We do not
+process or receive your payment details, and once you leave the App your activity is governed by that
+third party’s own privacy policy and terms. We encourage you to review them. Features that fetch
+public information (such as news, encyclopedia summaries, or stock quotes) send only your query to the
+relevant public source to return a result.</p>
+
+<h2 id="transfers">9. International data transfers</h2>
+<p>We are based in India. Some of our service providers (such as Google and Supabase) may process and
+store data on servers outside your country, including outside India. Where data is transferred across
+borders, we rely on appropriate safeguards and, where required, your consent. By using the App you
+consent to such transfers as described in this Policy.</p>
+
+<h2 id="retention">10. Data retention &amp; deletion</h2>
+<p>We keep personal data only for as long as your account is active or as needed to provide the
+Service, resolve disputes, maintain safety and security, and meet legal obligations. Specifically:</p>
+<ul>
+  <li><strong>On-device data</strong> remains until you delete it. Clear it from <em>Settings → Data &amp; privacy</em>.</li>
+  <li><strong>Cloud-synced data and account data</strong> are deleted when you delete your account from <em>Settings → Account → Delete account</em>. Server-side copies and backups are purged within <strong>30 days</strong>.</li>
+  <li><strong>Content reports</strong> may be retained as needed for safety, audit, and legal purposes.</li>
+  <li>Request text sent for AI replies is processed to answer you and is not used to build an advertising profile.</li>
+</ul>
+
+<h2 id="rights">11. Your rights and choices</h2>
+<p>Subject to applicable law, you have the right to:</p>
 <ul>
   <li><strong>Access</strong> a copy of your data — <em>Settings → Data &amp; privacy → Export</em>.</li>
-  <li><strong>Correct / update</strong> your data — edit it in the app, or email us.</li>
-  <li><strong>Erase</strong> your data — <em>Settings → Data &amp; privacy → Clear all my data</em>, or
-      <em>Settings → Account → Delete account</em> for everything.</li>
-  <li><strong>Withdraw consent</strong> — <em>Settings → Account → Sign out</em>, or stop using the app.</li>
-  <li><strong>Grievance redressal</strong> — contact our Grievance Officer (below).</li>
+  <li><strong>Correct or update</strong> your data — edit it in the App, or email us.</li>
+  <li><strong>Erase</strong> your data — <em>Settings → Data &amp; privacy → Clear all my data</em>, or <em>Settings → Account → Delete account</em> to remove everything.</li>
+  <li><strong>Withdraw consent</strong> — <em>Settings → Account → Sign out</em>, revoke a permission in device Settings, or stop using the App. Withdrawal does not affect processing already carried out.</li>
+  <li><strong>Data portability</strong> — export your saved data in a machine-readable format.</li>
+  <li><strong>Nominate</strong> — where the law allows, nominate another individual to exercise your rights in the event of death or incapacity.</li>
+  <li><strong>Grievance redressal</strong> — contact our Grievance Officer (<a href="#grievance">Section&nbsp;16</a>) and, if unsatisfied, lodge a complaint with the competent authority (in India, the Data Protection Board).</li>
 </ul>
+<p>To exercise a right that isn’t self-service in the App, email
+<a href="mailto:admin@koreidea.com">admin@koreidea.com</a>. We may need to verify your identity before
+acting and will respond within the timeframe required by law.</p>
 
-<h2>12. Children</h2>
-<p>Hai Robo is intended for users <strong>18 and older</strong> and is not directed to children.
-We do not knowingly collect data from anyone under 18.</p>
+<h2 id="security">12. Security &amp; data-breach notification</h2>
+<p>We use reasonable technical and organisational measures to protect your data, including encryption
+in transit (TLS), access controls, and provider-side encryption at rest. No method of transmission or
+storage is completely secure, but if a personal-data breach likely to cause harm occurs, we will
+notify affected users and the relevant authority as required by applicable law.</p>
 
-<h2>13. Security &amp; breach</h2>
-<p>We use reasonable technical and organisational measures (TLS in transit, access controls,
-provider-side encryption at rest) to protect your data. If a personal-data breach occurs, we will
-notify affected users and the relevant authority as required by law.</p>
+<h2 id="children">13. Children</h2>
+<p>The App is intended for users <strong>18 years and older</strong> and is not directed to children.
+We do not knowingly collect personal data from anyone under 18. If you believe a child has provided us
+data, contact us and we will delete it.</p>
 
-<h2>14. Grievance Officer</h2>
-<p>As required by the Digital Personal Data Protection Act, 2023:</p>
+<h2 id="regions">14. Region-specific disclosures</h2>
+<h3>India (Digital Personal Data Protection Act, 2023)</h3>
+<p>We act as the data fiduciary. We process personal data on the basis of your consent for specified
+purposes, provide the rights described above, and have appointed a Grievance Officer
+(<a href="#grievance">Section&nbsp;16</a>). You may approach the Data Protection Board of India if your
+grievance is not resolved.</p>
+<h3>EEA / United Kingdom (GDPR)</h3>
+<p>Where GDPR applies, our legal bases are consent, performance of a contract (providing the Service you
+request), our legitimate interests (security, abuse prevention, reliability), and legal obligation. You
+have the rights of access, rectification, erasure, restriction, objection, and portability, and the
+right to lodge a complaint with your local supervisory authority.</p>
+<h3>California (CCPA/CPRA)</h3>
+<p>We do <strong>not sell</strong> or “share” (as defined for cross-context behavioural advertising)
+your personal information, and we do not use it for targeted advertising. California residents have the
+rights to know, delete, correct, and to non-discrimination for exercising these rights.</p>
+
+<h2 id="changes">15. Changes to this Policy</h2>
+<p>We may update this Policy from time to time. When we do, we will revise the “Last updated” date
+above and, for material changes, provide a more prominent notice as appropriate. Your continued use of
+the App after an update means you accept the revised Policy.</p>
+
+<h2 id="grievance">16. Grievance Officer &amp; contact</h2>
+<p>In accordance with the Digital Personal Data Protection Act, 2023 and applicable rules:</p>
 <p><strong>Grievance Officer:</strong> Surendra Bharath Palle<br>
 <strong>Email:</strong> <a href="mailto:admin@koreidea.com">admin@koreidea.com</a><br>
-KOREIDEA INNOVATIONS PRIVATE LIMITED, Visakhapatnam, Andhra Pradesh, India</p>
-<p>We aim to acknowledge grievances within a reasonable time and resolve them promptly.</p>
+<strong>Company:</strong> KOREIDEA INNOVATIONS PRIVATE LIMITED<br>
+Visakhapatnam, Andhra Pradesh, India</p>
+<p>We aim to acknowledge grievances promptly and resolve them within the period required by law.</p>
 
-<h2>15. Changes</h2>
-<p>We may update this policy; the “Last updated” date will change accordingly.</p>
+<footer>
+  © 2026 KOREIDEA INNOVATIONS PRIVATE LIMITED. All rights reserved. “Hai Robo” is a product of
+  KOREIDEA INNOVATIONS PRIVATE LIMITED. Apple Weather and WeatherKit are trademarks of Apple Inc.
+  This page is the official privacy policy for the Hai Robo app.
+</footer>
 
-<h2>16. Contact</h2>
-<p>Questions: <a href="mailto:admin@koreidea.com">admin@koreidea.com</a></p>
 </body>
 </html>
