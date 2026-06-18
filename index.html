@@ -28,14 +28,14 @@
 <body>
 
 <h1>Hai Robo — Privacy Policy</h1>
-<p class="meta"><strong>Last updated:</strong> 26 May 2026 &nbsp;·&nbsp; <strong>Effective:</strong> 26 May 2026</p>
+<p class="meta"><strong>Last updated:</strong> 18 June 2026 &nbsp;·&nbsp; <strong>Effective:</strong> 18 June 2026</p>
 
 <p class="lede">This Privacy Policy explains how <strong>KOREIDEA INNOVATIONS PRIVATE LIMITED</strong>
 (“KOREIDEA”, “we”, “us”, or “our”) collects, uses, shares, and protects your information when you
 use the <strong>Hai Robo</strong> mobile application and its optional companion software
 (together, the “App” or “Service”). We are the <em>data fiduciary / data controller</em> for that
 information. We are committed to data minimisation — most processing happens on your device, and we
-collect only what we need to provide the Service.</p>
+collect only what we need to provide the Service. We never sell your data or use it for advertising.</p>
 
 <p>By downloading, accessing, or using the App, you acknowledge that you have read and understood
 this Policy. If you do not agree, please do not use the App.</p>
@@ -45,7 +45,7 @@ this Policy. If you do not agree, please do not use the App.</p>
   <ol>
     <li><a href="#who">Who we are</a></li>
     <li><a href="#collect">Information we collect</a></li>
-    <li><a href="#device">On-device processing</a></li>
+    <li><a href="#device">On-device processing (incl. Health, Contacts, Media, Face recognition)</a></li>
     <li><a href="#permissions">Device permissions</a></li>
     <li><a href="#use">How and why we use information</a></li>
     <li><a href="#ai">AI features, content &amp; reporting</a></li>
@@ -78,20 +78,25 @@ is collected only if you use that feature or grant the relevant permission.</p>
   <tr><td>Account &amp; identity</td><td>A unique user ID and, where you allow it, your name and email address, received through <strong>Sign in with Apple</strong> or <strong>Sign in with Google</strong>.</td><td>To create and secure your account and identify you across your devices.</td></tr>
   <tr><td>Profile</td><td>A display name you optionally set in the App.</td><td>To personalise replies (e.g. greet you by name).</td></tr>
   <tr><td>Voice commands &amp; chat</td><td>The <em>text</em> of what you ask (transcribed on your device), and your conversation history with the assistant.</td><td>To understand your request and generate a reply.</td></tr>
-  <tr><td>Saved content</td><td>Saved places, saved orders, expense entries, and the facts you explicitly ask the assistant to “remember”.</td><td>To provide the features you asked for and (optionally) sync them across your devices.</td></tr>
+  <tr><td>Saved content</td><td>Saved places, saved orders, expense entries, ideas/journal entries, and the facts you explicitly ask the assistant to “remember”.</td><td>To provide the features you asked for and (optionally) sync them across your devices.</td></tr>
   <tr><td>Content reports</td><td>If you report an AI response, the report you submit — which may include the flagged prompt and reply plus your description.</td><td>To investigate and act on objectionable content (see <a href="#ai">Section&nbsp;6</a>).</td></tr>
 </table>
 
 <h3>2.2 Information collected automatically</h3>
 <p>To deliver requests to our backend and keep the Service reliable, limited technical information is
 processed, such as your device type and operating-system version, the App version, coarse network
-information, and timestamps of requests. We do <strong>not</strong> embed third-party advertising or
-cross-app tracking SDKs, and we do not build advertising profiles about you. We do not use the
-App Tracking Transparency “tracking” permission.</p>
+information, and per-day usage counters used to enforce fair-use limits. We do <strong>not</strong>
+embed third-party advertising or cross-app tracking SDKs, and we do not build advertising profiles
+about you. We do not use the App Tracking Transparency “tracking” permission.</p>
 
 <h3>2.3 Information from permissions</h3>
 <p>Certain features rely on device data accessed only with your permission — see
 <a href="#permissions">Section&nbsp;4</a>.</p>
+
+<h3>2.4 Data that stays on your device</h3>
+<p>We do <strong>not</strong> collect your <strong>contacts</strong>, your <strong>Health</strong> data,
+or your enrolled <strong>face</strong> data. These are processed on your device for the features you
+enable and are never uploaded to our servers (see <a href="#device">Section&nbsp;3</a>).</p>
 
 <h2 id="device">3. On-device processing</h2>
 <p>We process as much as possible directly on your device, where it never reaches our servers:</p>
@@ -101,15 +106,43 @@ App Tracking Transparency “tracking” permission.</p>
   <li><strong>Face tracking</strong> uses the front camera to detect your face so the robot can turn toward you. Video frames are processed live on the device and are never recorded, stored, or uploaded.</li>
 </ul>
 
+<h3>3.1 Health data (Apple Health / HealthKit)</h3>
+<p>If you enable the wellness features, the App <strong>reads your step count</strong> from Apple
+Health and <strong>writes water-intake entries</strong> you log by voice, <strong>solely</strong> to
+power in-app activity and hydration reminders. Health data is processed on your device, is
+<strong>never sold, never used for advertising or any form of data-mining</strong>, and is
+<strong>never shared</strong> with any third party or used for any purpose other than these in-app
+reminders.</p>
+
+<h3>3.2 Contacts</h3>
+<p>When you ask the App to call or message someone by name, it looks that person up in your contacts
+<strong>on your device</strong> to place the call or open the message. Your contacts are
+<strong>not uploaded</strong> to our servers.</p>
+
+<h3>3.3 Apple Music / media</h3>
+<p>The App can control playback of your music library (play, pause, skip, shuffle). It does
+<strong>not</strong> collect your listening history.</p>
+
+<h3>3.4 Face recognition</h3>
+<p>Face recognition is <strong>off by default</strong>. If you enable it, faces seen by the camera are
+converted <strong>on your device</strong> into an encrypted mathematical summary (AES-GCM, with the key
+stored in your device Keychain) so the robot can greet enrolled family by name. <strong>No photos are
+saved</strong>, nothing is <strong>uploaded or synced to iCloud</strong>, and you can delete enrolled
+faces at any time in <em>Settings → Family faces</em>.</p>
+
 <h2 id="permissions">4. Device permissions</h2>
 <table>
   <tr><th>Permission</th><th>How it is used</th><th>Leaves device?</th></tr>
   <tr><td>Microphone</td><td>To hear the wake word and your voice commands.</td><td>No (wake word on-device; commands become text — see §3).</td></tr>
   <tr><td>Speech recognition</td><td>To convert your speech to text.</td><td>May involve Apple per device settings (see §3).</td></tr>
-  <tr><td>Camera</td><td>On-device face tracking and scanning a QR code to pair a Mac.</td><td>No.</td></tr>
+  <tr><td>Camera</td><td>On-device face tracking, optional face recognition, and scanning a QR code to pair a Mac.</td><td>No.</td></tr>
+  <tr><td>Contacts</td><td>To call or message a person you name, looked up on your device.</td><td>No — contacts are not uploaded.</td></tr>
+  <tr><td>Health</td><td>To read your step count and log water for in-app activity and hydration reminders.</td><td>No — stays in Apple Health on your device.</td></tr>
+  <tr><td>Apple Music / Media library</td><td>To control playback of your music library.</td><td>No — no listening history is collected.</td></tr>
   <tr><td>Location (when in use)</td><td>Only when you ask for local weather or to book a ride (to set your pickup point). Checked on demand.</td><td>Sent only to fulfil that request (weather/ride). Not tracked in background.</td></tr>
   <tr><td>Calendar &amp; Reminders</td><td>To tell you your next event and to create reminders you ask for.</td><td>Stays on your device / in your Apple account; we do not copy it to our servers.</td></tr>
   <tr><td>Motion &amp; fitness</td><td>To detect when the phone is placed on the dock.</td><td>No.</td></tr>
+  <tr><td>Notifications</td><td>To deliver timers, alarms, and reminders you set.</td><td>Local to your device.</td></tr>
   <tr><td>Photos (add only)</td><td>To save an image the assistant generated, when you tap Save.</td><td>Saved to your own photo library.</td></tr>
   <tr><td>Local network</td><td>To find your paired Mac on the same Wi-Fi for screen-aware help.</td><td>Stays on your local network.</td></tr>
   <tr><td>Bluetooth</td><td>To connect to the optional Hai Robo robot dock (pan, tilt, lights).</td><td>Local connection to your own dock only.</td></tr>
@@ -129,13 +162,18 @@ disables the related feature but otherwise does not stop you using the App.</p>
 <p>We rely on your <strong>consent</strong> (which you give when you sign in and when you grant a
 permission) and, where applicable, on our legitimate interest in operating, securing, and improving
 the Service and on compliance with legal obligations. We do <strong>not</strong> sell your personal
-data, and we do not use your conversations for advertising.</p>
+data, we do not use your data for advertising, and we do not use your conversations to train AI
+models.</p>
 
 <h2 id="ai">6. AI features, content &amp; reporting</h2>
 <p>The assistant’s replies, search answers, translations, and generated images are produced using
 artificial intelligence (see providers in <a href="#share">Section&nbsp;7</a>). When you ask a
 question, the recognised text of your request — and, for screen-aware help, a screenshot you
-explicitly request — is sent through our backend to the AI provider to generate a response.</p>
+explicitly request, or an image you ask the App to generate from — is sent through our backend to the
+AI provider to generate a response.</p>
+<p><strong>Your AI requests are not stored on our servers.</strong> The request text and any image you
+ask about are forwarded to the AI provider, the reply is returned to you, and nothing is retained on
+our servers afterwards. AI requests are not used to build an advertising profile or to train models.</p>
 <p><strong>AI can make mistakes.</strong> Responses and generated images may be inaccurate, incomplete,
 or unexpected, and should not be relied on for medical, legal, financial, or other critical decisions.</p>
 <p><strong>Content moderation and reporting.</strong> We apply content-safety filtering to reduce
@@ -150,15 +188,15 @@ so we can locate and review it. We review reports and take appropriate action, t
 agreements that require them to protect it and use it only for our purposes:</p>
 <table>
   <tr><th>Provider</th><th>Role</th><th>Data involved</th></tr>
-  <tr><td><strong>Apple</strong></td><td>Sign in with Apple; on-device speech recognition; WeatherKit; iCloud sync of your saved data.</td><td>Account identifier; speech (per device settings); location for weather; your saved data in your iCloud.</td></tr>
+  <tr><td><strong>Apple</strong></td><td>Sign in with Apple; on-device speech recognition; WeatherKit; iCloud sync of your saved data.</td><td>Account identifier; speech (per device settings); coarse location for weather; your saved data in your iCloud.</td></tr>
   <tr><td><strong>Google</strong></td><td>Sign in with Google; Gemini AI (replies, search, translation, images — via our backend); Maps Places (address lookup).</td><td>Account identifier; the text of your request and (for screen help) a requested screenshot; address queries.</td></tr>
   <tr><td><strong>Supabase</strong></td><td>Authentication, our AI proxy, optional cloud sync, and storage of account data.</td><td>Account data; your request text in transit; your saved data if cloud sync is on.</td></tr>
   <tr><td><strong>wttr.in</strong></td><td>Fallback weather source used only if Apple WeatherKit is temporarily unavailable.</td><td>Approximate location or place name to return weather.</td></tr>
 </table>
 <p>AI provider keys are held only on our backend and are <strong>never shipped inside the App</strong>.
-We may also disclose information if required by law, to protect our rights or users’ safety, or in
-connection with a merger, acquisition, or asset transfer (in which case we will notify you and this
-Policy will continue to apply).</p>
+We do not sell your data and do not share it for advertising. We may also disclose information if
+required by law, to protect our rights or users’ safety, or in connection with a merger, acquisition,
+or asset transfer (in which case we will notify you and this Policy will continue to apply).</p>
 
 <h2 id="thirdparty">8. Third-party apps and services you choose to open</h2>
 <p>Some features (for example, booking a ride or reordering food or groceries) work by opening a
@@ -178,18 +216,21 @@ consent to such transfers as described in this Policy.</p>
 <p>We keep personal data only for as long as your account is active or as needed to provide the
 Service, resolve disputes, maintain safety and security, and meet legal obligations. Specifically:</p>
 <ul>
-  <li><strong>On-device data</strong> remains until you delete it. Clear it from <em>Settings → Data &amp; privacy</em>.</li>
-  <li><strong>Cloud-synced data and account data</strong> are deleted when you delete your account from <em>Settings → Account → Delete account</em>. Server-side copies and backups are purged within <strong>30 days</strong>.</li>
+  <li><strong>On-device data</strong> remains until you delete it. Clear it from <em>Settings → Your data</em>.</li>
+  <li><strong>Saved &amp; cloud-synced data</strong> (places, orders, expenses, ideas, memory) is kept until you delete it. When you delete an item, it syncs to your other devices as “deleted” for <strong>30 days</strong>, then is <strong>permanently removed</strong> from our servers.</li>
+  <li><strong>Usage / quota counters</strong> are kept for <strong>30 days</strong>, then automatically deleted.</li>
+  <li><strong>AI requests</strong> (your request text and any image sent for a reply) are <strong>not stored</strong> on our servers — they are forwarded to the AI provider, the reply is returned, and nothing is retained.</li>
+  <li><strong>Deleting your account</strong> (<em>Settings → Account → Delete account</em>) triggers an <strong>immediate</strong> server-side deletion that erases all data tied to your account.</li>
   <li><strong>Content reports</strong> may be retained as needed for safety, audit, and legal purposes.</li>
-  <li>Request text sent for AI replies is processed to answer you and is not used to build an advertising profile.</li>
 </ul>
+<p>A nightly automated job enforces the 30-day windows above.</p>
 
 <h2 id="rights">11. Your rights and choices</h2>
 <p>Subject to applicable law, you have the right to:</p>
 <ul>
-  <li><strong>Access</strong> a copy of your data — <em>Settings → Data &amp; privacy → Export</em>.</li>
+  <li><strong>Access</strong> a copy of your data — <em>Settings → Your data → Export</em>.</li>
   <li><strong>Correct or update</strong> your data — edit it in the App, or email us.</li>
-  <li><strong>Erase</strong> your data — <em>Settings → Data &amp; privacy → Clear all my data</em>, or <em>Settings → Account → Delete account</em> to remove everything.</li>
+  <li><strong>Erase</strong> your data — <em>Settings → Your data → Clear all my data</em>, or <em>Settings → Account → Delete account</em> to remove everything.</li>
   <li><strong>Withdraw consent</strong> — <em>Settings → Account → Sign out</em>, revoke a permission in device Settings, or stop using the App. Withdrawal does not affect processing already carried out.</li>
   <li><strong>Data portability</strong> — export your saved data in a machine-readable format.</li>
   <li><strong>Nominate</strong> — where the law allows, nominate another individual to exercise your rights in the event of death or incapacity.</li>
@@ -201,9 +242,10 @@ acting and will respond within the timeframe required by law.</p>
 
 <h2 id="security">12. Security &amp; data-breach notification</h2>
 <p>We use reasonable technical and organisational measures to protect your data, including encryption
-in transit (TLS), access controls, and provider-side encryption at rest. No method of transmission or
-storage is completely secure, but if a personal-data breach likely to cause harm occurs, we will
-notify affected users and the relevant authority as required by applicable law.</p>
+in transit (TLS), access controls, and provider-side encryption at rest. On-device sensitive data
+(such as face summaries and your session token) is stored in the iOS Keychain. No method of
+transmission or storage is completely secure, but if a personal-data breach likely to cause harm
+occurs, we will notify affected users and the relevant authority as required by applicable law.</p>
 
 <h2 id="children">13. Children</h2>
 <p>The App is intended for users <strong>18 years and older</strong> and is not directed to children.
